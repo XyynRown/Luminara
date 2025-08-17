@@ -8,9 +8,10 @@ $script = "dashboard";
 <?php
 include_once __DIR__ . '/../components/header.php';
 ?>
+<?php
+include_once __DIR__ . '/../components/navbar.php';
+?>
 
-
-ini dashboard
 
 
 <?php
