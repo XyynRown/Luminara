@@ -1,0 +1,38 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.left-side {
+  background: #f8f9fa; /* abu-abu terang */
+  height: 100vh;
+}
+.right-side {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+e .login-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+.gradient-gold {
+  background: linear-gradient(90deg, #f8c471, #e49920, #f8c471);
+  background-size: 200% 100%;
+  background-position: left center;
+  color: white;
+  transition: background-position 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+.gradient-gold:hover {
+  background-position: right center;
+  color: white;
+}
+
+.penjelasan {
+  font-size: 25px;
+  color: black; /* abu-abu gelap */
+  text-align: center;
+}

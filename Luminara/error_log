@@ -1,0 +1,18 @@
+[17-Aug-2025 09:54:06 UTC] PHP Warning:  include(D:\localweb\WEB_LOCAL\Luminara\public): Failed to open stream: Permission denied in D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php on line 79
+[17-Aug-2025 09:54:06 UTC] PHP Stack trace:
+[17-Aug-2025 09:54:06 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php:0
+[17-Aug-2025 09:54:06 UTC] PHP Warning:  include(): Failed opening '../' for inclusion (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php on line 79
+[17-Aug-2025 09:54:06 UTC] PHP Stack trace:
+[17-Aug-2025 09:54:06 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php:0
+[17-Aug-2025 09:54:12 UTC] PHP Warning:  include(D:\localweb\WEB_LOCAL\Luminara\public): Failed to open stream: Permission denied in D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php on line 79
+[17-Aug-2025 09:54:12 UTC] PHP Stack trace:
+[17-Aug-2025 09:54:12 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php:0
+[17-Aug-2025 09:54:12 UTC] PHP Warning:  include(): Failed opening '../' for inclusion (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php on line 79
+[17-Aug-2025 09:54:12 UTC] PHP Stack trace:
+[17-Aug-2025 09:54:12 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php:0
+[17-Aug-2025 09:54:17 UTC] PHP Warning:  include(D:\localweb\WEB_LOCAL\Luminara\public): Failed to open stream: Permission denied in D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php on line 79
+[17-Aug-2025 09:54:17 UTC] PHP Stack trace:
+[17-Aug-2025 09:54:17 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php:0
+[17-Aug-2025 09:54:17 UTC] PHP Warning:  include(): Failed opening '../' for inclusion (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php on line 79
+[17-Aug-2025 09:54:17 UTC] PHP Stack trace:
+[17-Aug-2025 09:54:17 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\pages\login.php:0
