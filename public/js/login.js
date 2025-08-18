@@ -4,7 +4,8 @@ document
     e.preventDefault();
     const formData = new FormData(this);
 
-    try {const res = await fetch("/luminara/includes/login.php", {
+    try {
+      const res = await fetch("/luminara/includes/login.php", {
         method: "POST",
         body: formData,
       });
