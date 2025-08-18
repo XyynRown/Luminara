@@ -15,7 +15,7 @@ include_once __DIR__ . '/../components/header.php';
     <!-- 3/4 bagian kiri -->
     <div class="flex-column col-lg-7 left-side d-none d-lg-flex align-items-center justify-content-center">
       <!-- Bisa isi gambar/banner kalau mau -->
-      <img src="../assets/img/logo.png" alt="Login Banner" class="img-fluid w-50">
+      <img src="../assets/img/logo.png" alt="Login Banner" class="img-fluid" style="width: 250px; height: 100px;">
        <strong class="penjelasan">Lorem, ipsum dolor sit amet consectetur</strong>
        <br>
 
@@ -81,33 +81,29 @@ include_once __DIR__ . '/../components/header.php';
           </div>
 
           <!-- Password -->
-          <div class="col-auto">
-            <label for="password" class="col-form-label">Password</label>
+         <div class="mb-2">
+          <label for="password" class="form-label">Password</label>
+          <div class="input-group">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+              <i class="bi bi-eye"></i>
+            </button>
           </div>
-          <div class="row g-3 align-items-center">
-            <div class="input-group">
-              <input type="password" class="form-control" id="password" placeholder="Password">
-              <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                <i class="bi bi-eye"></i>
-              </button>
-            </div>
-          </div>
-          <!-- verifikasi password -->
-          <div class="col-auto">
-            <label for="verificationPassword" class="col-form-label">Verifikasi Password</label>
+        </div>
+
+        <!-- Verifikasi Password -->
+        <div class="mb-3">
+          <label for="verificationPassword" class="form-label">Verifikasi Password</label>
+          <div class="input-group">
+            <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password">
+            <button class="btn btn-outline-secondary" type="button" id="toggleVerificationPassword">
+              <i class="bi bi-eye"></i>
+            </button>
           </div>
-          <div class="row g-3 align-items-center">
-            <div class="input-group">
-              <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password">
-              <button class="btn btn-outline-secondary" type="button" id="toggleVerificationPassword">
-                <i class="bi bi-eye"></i>
-              </button>
-            </div>
-          </div>
-          
-          <!-- Button -->
-           <br><br>
-          <button type="submit" class="btn gradient-gold w-100"><strong>Register</strong></button>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="btn gradient-gold w-100 mb-3"><strong>Register</strong></button>
         </form>
         <hr>
         <p class="text-center mt-3 mb-0 d-flex">Sudah punya akun? 

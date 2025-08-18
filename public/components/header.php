@@ -8,5 +8,7 @@
     <title><?= $title ?? "NONE"; ?></title>
     <link rel="stylesheet" href="../css/<?= $css ?? "style"; ?>.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="/../assets/img/favicon.ico">
 </head>
 <body>

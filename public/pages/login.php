@@ -72,7 +72,6 @@ include_once __DIR__ . '/../components/header.php';
           <br>
           <!-- Button -->
            <div class="d-grid gap-2 mb-3 d-flex justify-content-center">
-<<<<<<< HEAD
               <button type="button" 
                       class="btn gradient-gold w-100" 
                       onclick="window.location.href='/'">
@@ -81,10 +80,6 @@ include_once __DIR__ . '/../components/header.php';
                 </strong>
               </button>
               <button type="submit" class="btn gradient-gold w-100"><strong>Login</strong></button>
-=======
-            <button type="submit" name="action" value="demo" class="btn gradient-gold w-100"><strong>Demo</strong></button>
-            <button type="submit" name="action" value="login" class="btn gradient-gold w-100"><strong>Login</strong></button>
->>>>>>> b54f72e (push backend wlee 18/8/25)
            </div>
 
 
