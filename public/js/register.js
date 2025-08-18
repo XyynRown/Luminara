@@ -38,4 +38,35 @@ document
       " " +
       document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
+    let password = "";
+
+    if(document.getElementById('password').value === document.getElementById('verificationPassword').value){
+        password = document.getElementById('password').value;
+        document
+        .getElementById('warningText')
+        .textContent = "";
+    } else {
+        document
+        .getElementById('warningText')
+        .textContent = "Password tidak sama";
+    }
+
+    const formData = {
+        username: username,
+        email: email,
+        password: password
+    };
+
+    try{const res = await fetch("/luminara/includes/register.php", {
+            method: "POST",
+            body: FormData,
+        });
+        const data = await res.json();
+
+        if(data.success){
+            
+        }
+    } catch(err){
+        console.error("Error: ", err);
+    }
   });

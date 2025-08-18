@@ -1,3 +1,18 @@
+const passwordInput = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", function () {
+  const type =
+    passwordInput.getAttribute("type") === "password" ? "text" : "password";
+  passwordInput.setAttribute("type", type);
+
+  // ganti ikon
+  this.innerHTML =
+    type === "password"
+      ? '<i class="bi bi-eye"></i>'
+      : '<i class="bi bi-eye-slash"></i>';
+});
+
 document
   .getElementById("loginForm")
   .addEventListener("submit", async function (e) {

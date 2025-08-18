@@ -58,10 +58,10 @@ include_once __DIR__ . '/../components/header.php';
           </div>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" id="firstName" placeholder="First name" aria-label="First name">
+              <input type="text" class="form-control" id="firstName" placeholder="First name" aria-label="First name" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+              <input type="text" class="form-control" id="lastName" placeholder="Last name" aria-label="Last name" required>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ include_once __DIR__ . '/../components/header.php';
           </div>
           <div class="row">
             <div class="col">
-              <input type="email" class="form-control" id="email" placeholder="example@xyz.com" aria-label="Email">
+              <input type="email" class="form-control" id="email" placeholder="example@xyz.com" aria-label="Email" required>
             </div>
             <div class="col">
               <button class="btn gradient-gold w-100" type="button">
@@ -84,7 +84,7 @@ include_once __DIR__ . '/../components/header.php';
          <div class="mb-2">
           <label for="password" class="form-label">Password</label>
           <div class="input-group">
-            <input type="password" class="form-control" id="password" placeholder="Password">
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
             <button class="btn btn-outline-secondary" type="button" id="togglePassword">
               <i class="bi bi-eye"></i>
             </button>
@@ -95,7 +95,7 @@ include_once __DIR__ . '/../components/header.php';
         <div class="mb-3">
           <label for="verificationPassword" class="form-label">Verifikasi Password</label>
           <div class="input-group">
-            <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password">
+            <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password" required>
             <button class="btn btn-outline-secondary" type="button" id="toggleVerificationPassword">
               <i class="bi bi-eye"></i>
             </button>
@@ -103,6 +103,7 @@ include_once __DIR__ . '/../components/header.php';
         </div>
 
         <!-- Button -->
+        <p id="warningText" class="text-danger f-s1"></p>
         <button type="submit" class="btn gradient-gold w-100 mb-3"><strong>Register</strong></button>
         </form>
         <hr>
