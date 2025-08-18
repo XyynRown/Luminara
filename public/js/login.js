@@ -4,8 +4,7 @@ document
     e.preventDefault();
     const formData = new FormData(this);
 
-    try {
-      const res = await fetch("/Luminara/inc/login.php", {
+    try {const res = await fetch("/luminara/includes/login.php", {
         method: "POST",
         body: formData,
       });
@@ -13,7 +12,7 @@ document
 
       if (data.success) {
         alert("Login berhasil!");
-        window.location.href = "/Luminara/pages/dashboard.php";
+        window.location.href = "/luminara/pages/dashboard.php";
       } else {
         alert("Login gagal: " + data.message);
       }

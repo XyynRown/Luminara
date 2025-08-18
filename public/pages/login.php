@@ -52,7 +52,7 @@ include_once __DIR__ . '/../components/header.php';
         <h3><strong>Selamat datang kembali!</strong></h3>
         <p class="text-secondary mb-4">Login untuk melanjutkan</p>
         
-        <form action="proses_login.php" method="POST">
+        <form id="loginForm">
 
           <!-- Email -->
           <div class="mb-3">
@@ -62,11 +62,17 @@ include_once __DIR__ . '/../components/header.php';
           <!-- Password -->
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan password" required>
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan password" required>
+              <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                  <i class="bi bi-eye"></i>
+              </button>
+            </div>
           </div>
           <br>
           <!-- Button -->
            <div class="d-grid gap-2 mb-3 d-flex justify-content-center">
+<<<<<<< HEAD
               <button type="button" 
                       class="btn gradient-gold w-100" 
                       onclick="window.location.href='/'">
@@ -75,6 +81,10 @@ include_once __DIR__ . '/../components/header.php';
                 </strong>
               </button>
               <button type="submit" class="btn gradient-gold w-100"><strong>Login</strong></button>
+=======
+            <button type="submit" name="action" value="demo" class="btn gradient-gold w-100"><strong>Demo</strong></button>
+            <button type="submit" name="action" value="login" class="btn gradient-gold w-100"><strong>Login</strong></button>
+>>>>>>> b54f72e (push backend wlee 18/8/25)
            </div>
 
 
@@ -93,7 +103,8 @@ include_once __DIR__ . '/../components/header.php';
           </div>
       </div>
     </div>
-
+  </div>
+</div>
 
 
 <?php

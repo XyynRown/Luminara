@@ -42,7 +42,7 @@ include_once __DIR__ . '/../components/header.php';
       </div>
     </div>  
 
-    <!-- LOGIN -->
+    <!-- REGISTER -->
     <div class="col-lg-5 p-4 right-side bg-white flex-column align-items-start justify-content-center">
       <div class="w-100">
         <div class="d-flex d-lg-none justify-content-center mb-4">
@@ -52,61 +52,56 @@ include_once __DIR__ . '/../components/header.php';
         <h3><strong>Selamat datang!</strong></h3>
         <p class="text-secondary mb-4">Buat akun untuk melanjutkan</p>
         
-        <form action="proses_login.php" method="POST">
-
-
-
-        <label for="">Name</label>
-        <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        <form id="registerForm">
+          <div class="col-auto">
+            <label for="">Name</label>
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" id="firstName" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+            </div>
           </div>
-        </div>
-        <br>
 
+            <!-- Email -->
+          <div class="col-auto">
+            <label for="email">Email</label>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="email" class="form-control" id="email" placeholder="example@xyz.com" aria-label="Email">
+            </div>
+            <div class="col">
+              <button class="btn gradient-gold w-100" type="button">
+                <strong>Check Email</strong>
+              </button>
+            </div>
+          </div>
 
-          <!-- Email -->
-        <label for="">Email</label>
-        <div class="row">
-          <div class="col">
-            <input type="email" class="form-control" aria-label="First name">
-          </div>
-          <div class="col">
-            <button class="btn gradient-gold w-100" type="button">
-              <strong>Check Email</strong>
-            </button>
-          </div>
-        </div>
           <!-- Password -->
           <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Password</label>
+            <label for="password" class="col-form-label">Password</label>
           </div>
           <div class="row g-3 align-items-center">
-            <div class="col-auto w-50">
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" placeholder="Password">
+              <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                <i class="bi bi-eye"></i>
+              </button>
             </div>
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                Harus 8-20 karakter.
-              </span>
-            </div>
-          </div>
-
+          </div>
           <!-- verifikasi password -->
           <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Verifikasi Password</label>
+            <label for="verificationPassword" class="col-form-label">Verifikasi Password</label>
           </div>
           <div class="row g-3 align-items-center">
-            <div class="col-auto w-50">
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-            </div>
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                Harus sama dengan password.
-              </span>
+            <div class="input-group">
+              <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password">
+              <button class="btn btn-outline-secondary" type="button" id="toggleVerificationPassword">
+                <i class="bi bi-eye"></i>
+              </button>
             </div>
           </div>
           
