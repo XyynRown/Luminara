@@ -1,7 +1,7 @@
 <?php
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-
+require __DIR__ . "mailer.php";
 //temp
 $jwt_token = 'gacor999';
 
@@ -54,5 +54,31 @@ function register($conn) {
         echo json_encode(["status" => "success", "message" => "Registrasi berhasil"]);
     } catch (PDOException $e) {
         echo json_encode(["status" => "error", "message" => "Email sudah terdaftar"]);
+    }
+}
+
+function verification(){
+    $data = json_decode(file_get_contents("php://input", true));
+    $email = $data['email'] ?? null;
+
+    if(!$email){
+        echo json_encode(["success" => false, "message" => "Email tidak boleh kosong"]);
+        exit;
+    }
+
+    $otp = rand(100000, 999999);
+    $otpExpired = time() + (10 * 60);
+
+    $subject = "Kode OTP Anda";
+    $body = "<h2>Verifikasi OTP</h2>
+            <p>Kode OTP Anda: <b>$otp</b></p>
+            <p>Berlaku 5 menit.</p>";
+
+    $send = sendEmail($email, $subject, $body);
+
+    if($send === true){
+        echo json_encode(["success" => true, "message" => "OTP berhasil dikirm"]);
+    } else {
+        echo json_encode(["success" => false, "message" => $send]);
     }
 }

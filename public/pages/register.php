@@ -65,7 +65,7 @@ include_once __DIR__ . '/../components/header.php';
             </div>
           </div>
 
-            <!-- Email -->
+          <!-- Email -->
           <div class="col-auto">
             <label for="email">Email</label>
           </div>
@@ -81,30 +81,30 @@ include_once __DIR__ . '/../components/header.php';
           </div>
 
           <!-- Password -->
-         <div class="mb-2">
-          <label for="password" class="form-label">Password</label>
-          <div class="input-group">
-            <input type="password" class="form-control" id="password" placeholder="Password" required>
-            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-              <i class="bi bi-eye"></i>
-            </button>
+          <div class="mb-2">
+            <label for="password" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+              <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- Verifikasi Password -->
-        <div class="mb-3">
-          <label for="verificationPassword" class="form-label">Verifikasi Password</label>
-          <div class="input-group">
-            <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password" required>
-            <button class="btn btn-outline-secondary" type="button" id="toggleVerificationPassword">
-              <i class="bi bi-eye"></i>
-            </button>
+          <!-- Verifikasi Password -->
+          <div class="mb-3">
+            <label for="verificationPassword" class="form-label">Verifikasi Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="verificationPassword" placeholder="Verifikasi Password" required>
+              <button class="btn btn-outline-secondary" type="button" id="toggleVerificationPassword">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- Button -->
-        <p id="warningText" class="text-danger f-s1"></p>
-        <button type="submit" class="btn gradient-gold w-100 mb-3"><strong>Register</strong></button>
+          <!-- Button -->
+          <p id="warningText" class="text-danger f-s1"></p>
+          <button type="submit" class="btn gradient-gold w-100 mb-3"><strong>Register</strong></button>
         </form>
         <hr>
         <p class="text-center mt-3 mb-0 d-flex">Sudah punya akun? 

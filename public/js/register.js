@@ -38,35 +38,50 @@ document
       " " +
       document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
-    let password = "";
 
     if(document.getElementById('password').value === document.getElementById('verificationPassword').value){
-        password = document.getElementById('password').value;
-        document
+
+      document
         .getElementById('warningText')
         .textContent = "";
+
+      const formData = {
+        username: username,
+        email: email,
+        password: document.getElementById('password').value
+      };
+
+      try{
+        const res = await fetch("/index.php?route=verification", {
+          method: "POST",
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({email})
+        });
+
+        const result = await response.json();
+        alert(result.message);
+      } catch (err){
+        console.error("Error: ", err);
+      }
+      // try{const res = await fetch("/index.php?route=register", {
+      //         method: "POST",
+      //         headers: {'Content-Type': 'application/json'},
+      //         body: JSON.stringify(formData)
+      //     });
+      //     const data = await res.json();
+  
+      //     if(data.success){
+              
+      //     }
+      // } catch(err){
+      //     console.error("Error: ", err);
+      // }
+      
+      // window.location.href = window.location.origin + "/verification";
     } else {
-        document
+      document
         .getElementById('warningText')
         .textContent = "Password tidak sama";
     }
 
-    const formData = {
-        username: username,
-        email: email,
-        password: password
-    };
-
-    try{const res = await fetch("/luminara/includes/register.php", {
-            method: "POST",
-            body: FormData,
-        });
-        const data = await res.json();
-
-        if(data.success){
-            
-        }
-    } catch(err){
-        console.error("Error: ", err);
-    }
   });

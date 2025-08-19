@@ -14,6 +14,9 @@ switch ($request) {
     case 'register':
         require __DIR__ . '/pages/register.php';
         break;
+    case 'verification':
+        require __DIR__ . '/pages/email_verification.php';
+        break;
     default:
         $file = __DIR__ . "/public/$request.php";
         if (file_exists($file)) {
@@ -36,6 +39,11 @@ switch ($route) {
         register($conn, $jwt_token);
         break;
 
+    case "verification":
+        require __DIR__ . "/../includes/auth.php";
+        verification();
+        break;
+        
     default:
         break;
 }

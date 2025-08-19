@@ -19,7 +19,8 @@ document
     e.preventDefault();
     const formData = new FormData(this);
 
-    try {const res = await fetch("/luminara/includes/login.php", {
+    try {
+      const res = await fetch("/index.php?route=login", {
         method: "POST",
         body: formData,
       });
@@ -27,7 +28,7 @@ document
 
       if (data.success) {
         alert("Login berhasil!");
-        window.location.href = "/luminara/pages/dashboard.php";
+        window.location.href = window.location.origin + "/dashboard";
       } else {
         alert("Login gagal: " + data.message);
       }
