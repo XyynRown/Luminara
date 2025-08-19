@@ -13,7 +13,7 @@ include_once __DIR__ . '/../components/header.php';
     <div class="mb-4 d-flex flex-column align-items-center">
         
         <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid me-3" style="width: 150px; height: 150px;">
-        <h1 class="display-1 fw-bold text-disable" style="">404</h1>
+        <h1 class="display-1 fw-bold text-disable">404</h1>
     </div>
 
     <h2 class="mb-3">Oops! Halaman tidak ditemukan</h2>

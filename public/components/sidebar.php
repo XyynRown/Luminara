@@ -21,7 +21,7 @@
         </div>
         </div>
         <div>
-            <form id="logoutForm" method="POST" action="../includes/logout.php">
+            <form id="logoutForm" method="POST" action="/api/logout">
                 <button type="submit" class="btn btn-danger btn-sm w-100">
                     <i class="fas fa-sign-out-alt"></i><strong>Logout</strong> 
                 </button>

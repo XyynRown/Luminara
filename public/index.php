@@ -6,22 +6,24 @@ require __DIR__ . '/../includes/config.php';
 if (str_starts_with($request, "api/")) {
     header("Content-Type: application/json");
 
-    require __DIR__ . "/../includes/auth.php";
-
     switch ($request) {
         case "api/login":
+            require __DIR__ . '/../includes/auth.php';
             login($conn, $jwt_token);
             break;
 
         case "api/register":
+            require __DIR__ . '/../includes/auth.php';
             register($conn, $jwt_token);
             break;
 
         case "api/verification":
+            require __DIR__ . '/../includes/auth.php';
             verification();
             break;
 
         case "api/logout":
+            require __DIR__ . '/../includes/logout.php';
             break;
 
         default:

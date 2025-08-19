@@ -39,7 +39,7 @@ function login($conn, $jwt_token) {
     }
 }
 
-function register($conn) {
+function register($conn, $jwt_token) {
     $data = json_decode(file_get_contents("php://input"), true);
 
     if (!isset($data['email'], $data['password'])) {
@@ -70,10 +70,13 @@ function verification(){
     $otp = rand(100000, 999999);
     $otpExpired = time() + (10 * 60);
 
+    $template = file_get_contents("../public/components/mailbox.php");
     $subject = "Kode OTP Anda";
-    $body = "<h2>Verifikasi OTP</h2>
-            <p>Kode OTP Anda: <b>$otp</b></p>
-            <p>Berlaku 5 menit.</p>";
+    $body = str_replace(
+        ["{{OTP}}", "{{EXPIRED}}"],
+        [$otp, 5],
+        $template
+    );
 
     $send = sendEmail($email, $subject, $body);
 
