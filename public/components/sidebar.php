@@ -21,9 +21,11 @@
         </div>
         </div>
         <div>
-            <button class="btn btn-danger btn-sm w-100 " onclick="logout()">
-                <i class="fas fa-sign-out-alt"></i><strong>Logout</strong> 
-            </button>
+            <form id="logoutForm" method="POST" action="../includes/logout.php">
+                <button type="submit" class="btn btn-danger btn-sm w-100">
+                    <i class="fas fa-sign-out-alt"></i><strong>Logout</strong> 
+                </button>
+            </form>
         </div>
     </div>
 
