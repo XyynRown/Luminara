@@ -57,26 +57,26 @@ document
         email: email,
         password: document.getElementById("password").value,
       };
-      
-      load()
 
-      try{
+      load();
+
+      try {
         const res = await fetch("/api/verification", {
           method: "POST",
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify(formData)
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
         });
 
         const result = await res.json();
 
-        if(result.success){
+        if (result.success) {
           // alert("OTP terkirim!");
           window.location.href = window.location.origin + "/verification";
         } else {
           // alert("Gagal: " + result.message);
           return;
         }
-      } catch (err){
+      } catch (err) {
         console.error("Error: ", err);
       }
       // try{const res = await fetch("/index.php?route=register", {
@@ -92,7 +92,7 @@ document
       // } catch(err){
       //     console.error("Error: ", err);
       // }
-      
+
       // window.location.href = window.location.origin + "/verification";
     } else {
       document.getElementById("warningText").textContent =

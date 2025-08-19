@@ -2,7 +2,7 @@
 
 $title = "Verifikasi ";
 $css = "login"; 
-$script = "register";
+$script = "verification";
 
 ?>
 <?php
@@ -52,7 +52,9 @@ include_once __DIR__ . '/../components/header.php';
          <img src="../assets/img/logo.png" alt="Logo" style="width: 250px;" >
         </div>
         <h3><strong>Verifikasi Email</strong></h3>
-        <p class="text-secondary mb-4">Masukan kode OTP yang dikirim melewaati email untuk melanjutkan</p>
+        <div class="d-flex  mb-4">
+          <p class="text-secondary mb-4">Masukan kode OTP yang dikirim melewaati email sebelum <p style="opacity: 0;">_</p> <strong style="color:#c73232;" id="timer">05:00</strong> </p>
+        </div>
         
         <form id="verificationForm">
 
