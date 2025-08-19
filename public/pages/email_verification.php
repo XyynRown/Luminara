@@ -52,7 +52,7 @@ include_once __DIR__ . '/../components/header.php';
          <img src="../assets/img/logo.png" alt="Logo" style="width: 250px;" >
         </div>
         <h3><strong>Verifikasi Email</strong></h3>
-        <p class="text-secondary mb-4">Masukan kode OTP yang dikirim melewaati email untuk melanjutkan</p>
+        <p class="text-secondary mb-4">Masukan kode OTP yang dikirim melewati email untuk melanjutkan</p>
         
         <form id="verificationForm">
 
@@ -65,7 +65,7 @@ include_once __DIR__ . '/../components/header.php';
               <input type="text" class="form-control" id="otp" placeholder="Masukan kode OTP" aria-label="otp">
             </div>
             <div class="col">
-            <button class="btn gradient-gold w-100 w-md-50" type="button">
+            <button id="sendOTP" class="btn gradient-gold w-100 w-md-50" type="button">
                 <strong>Kirim ulang</strong>
             </button>
             </div>

@@ -57,11 +57,11 @@ document
         email: email,
         password: document.getElementById("password").value,
       };
-      
+
       load()
 
       try{
-        const res = await fetch("/api/verification", {
+        const res = await fetch("/api/sendOTP", {
           method: "POST",
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(formData)
@@ -79,21 +79,6 @@ document
       } catch (err){
         console.error("Error: ", err);
       }
-      // try{const res = await fetch("/index.php?route=register", {
-      //         method: "POST",
-      //         headers: {'Content-Type': 'application/json'},
-      //         body: JSON.stringify(formData)
-      //     });
-      //     const data = await res.json();
-
-      //     if(data.success){
-
-      //     }
-      // } catch(err){
-      //     console.error("Error: ", err);
-      // }
-      
-      // window.location.href = window.location.origin + "/verification";
     } else {
       document.getElementById("warningText").textContent =
         "Password tidak sama";

@@ -17,9 +17,9 @@ if (str_starts_with($request, "api/")) {
             register($conn, $jwt_token);
             break;
 
-        case "api/verification":
+        case "api/sendOTP":
             require __DIR__ . '/../includes/auth.php';
-            verification();
+            sendOTP($conn);
             break;
 
         case "api/logout":

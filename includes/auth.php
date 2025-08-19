@@ -58,7 +58,7 @@ function register($conn, $jwt_token) {
     }
 }
 
-function verification(){
+function sendOTP($conn){
     $data = json_decode(file_get_contents("php://input"), true);
     $email = $data['email'] ?? null;
 
@@ -77,6 +77,19 @@ function verification(){
         [$otp, 5],
         $template
     );
+
+    // Simpan OTP dan expired ke database
+    $stmt = $conn->prepare("SELECT * FROM pending_users WHERE email = ?");
+    $stmt->execute([$email]);
+    $existing = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if($existing) {
+        $stmt = $conn->prepare("UPDATE pending_users SET otp_code = ?, otp_expired_at = ? WHERE email = ?");
+        $stmt->execute([$otp, $otpExpired, $email]);
+    } else {
+        $stmt = $conn->prepare("INSERT INTO pending_users (email, otp_code, otp_expired_at) VALUES (?, ?, ?)");
+        $stmt->execute([$email, $otp, $otpExpired]);
+    }
 
     $send = sendEmail($email, $subject, $body);
 
