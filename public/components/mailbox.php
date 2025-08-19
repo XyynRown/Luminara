@@ -61,6 +61,8 @@
       <p>Jika Anda tidak merasa mendaftar, abaikan email ini.</p>
       <p>© 2025 Luminara. All rights reserved.</p>
     </div>
+
+    
   </div>
 </body>
 </html>

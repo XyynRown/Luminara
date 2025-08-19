@@ -12,14 +12,14 @@ if (str_starts_with($request, "api/")) {
             login($conn, $jwt_token);
             break;
 
-        case "api/register":
-            require __DIR__ . '/../includes/auth.php';
-            register($conn, $jwt_token);
-            break;
-
         case "api/sendOTP":
             require __DIR__ . '/../includes/auth.php';
             sendOTP($conn);
+            break;
+
+        case "api/verifyOTP":
+            require __DIR__ . '/../includes/auth.php';
+            verifyOTP($conn);
             break;
 
         case "api/logout":

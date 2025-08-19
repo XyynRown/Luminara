@@ -39,25 +39,6 @@ function login($conn, $jwt_token) {
     }
 }
 
-function register($conn, $jwt_token) {
-    $data = json_decode(file_get_contents("php://input"), true);
-
-    if (!isset($data['email'], $data['password'])) {
-        echo json_encode(["status" => "error", "message" => "Email & password wajib diisi"]);
-        return;
-    }
-
-    $hash = password_hash($data['password'], PASSWORD_DEFAULT);
-
-    try {
-        $stmt = $conn->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
-        $stmt->execute([$data['email'], $hash]);
-        echo json_encode(["status" => "success", "message" => "Registrasi berhasil"]);
-    } catch (PDOException $e) {
-        echo json_encode(["status" => "error", "message" => "Email sudah terdaftar"]);
-    }
-}
-
 function sendOTP($conn){
     $data = json_decode(file_get_contents("php://input"), true);
     $email = $data['email'] ?? null;
@@ -68,7 +49,7 @@ function sendOTP($conn){
     }
 
     $otp = rand(100000, 999999);
-    $otpExpired = time() + (10 * 60);
+    $otpExpired = date("Y-m-d H:i:s", time() + (5 * 60)); // 5 menit dari sekarang
 
     $template = file_get_contents("../public/components/mailbox.php");
     $subject = "Kode OTP Anda";
@@ -97,5 +78,31 @@ function sendOTP($conn){
         echo json_encode(["success" => true, "message" => "OTP berhasil dikirm"]);
     } else {
         echo json_encode(["success" => false, "message" => $send]);
+    }
+}
+
+function verifyOTP($conn) {
+    $data = json_decode(file_get_contents("php://input"), true);
+    $username = $data['username'] ?? null;
+    $email = $data['email'] ?? null;
+    $password = $data['password'] ?? null;
+    $otp = $data['otp'] ?? null;
+
+    $stmt = $conn->prepare("SELECT * FROM pending_users WHERE email = ? AND otp_code = ?");
+    $stmt->execute([$email, $otp]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if($user && time() < strtotime($user['otp_expired_at'])) {
+        // OTP valid, buat user baru
+        $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+        $stmt->execute([$username, $email, password_hash($password, PASSWORD_DEFAULT)]);
+
+        // Hapus dari pending_users
+        $stmt = $conn->prepare("DELETE FROM pending_users WHERE email = ?");
+        $stmt->execute([$email]);
+
+        echo json_encode(["success" => true, "message" => "Verifikasi berhasil"]);
+    } else {
+        echo json_encode(["success" => false, "message" => "OTP tidak valid atau sudah kadaluarsa"]);
     }
 }

@@ -57,30 +57,33 @@ document
         email: email,
         password: document.getElementById("password").value,
       };
-
+      localStorage.setItem("formData", JSON.stringify(formData));
+      
       load()
-
+      
       try{
         const res = await fetch("/api/sendOTP", {
           method: "POST",
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify(formData)
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
         });
-
+        
         const result = await res.json();
-
-        if(result.success){
+        
+        if (result.success) {
           // alert("OTP terkirim!");
           window.location.href = window.location.origin + "/verification";
         } else {
-          // alert("Gagal: " + result.message);
-          return;
+          document.getElementById("warningText").textContent =
+            "Gagal mengirim OTP: " + result.message;
         }
-      } catch (err){
+      } catch (err) {
         console.error("Error: ", err);
       }
     } else {
       document.getElementById("warningText").textContent =
-        "Password tidak sama";
+      "Password tidak sama";
     }
   });
+  
+  
