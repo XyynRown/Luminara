@@ -1,0 +1,20 @@
+.main-sidebar {
+  transition: margin-left 0.4s ease-in-out;
+}
+
+.content-wrapper {
+  transition: margin-left 0.4s ease-in-out;
+}
+
+.gradient-gold {
+  background: linear-gradient(90deg, #f8c471, #e49920, #f8c471);
+  background-size: 200% 100%;
+  background-position: left center;
+  color: white;
+  transition: background-position 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+.gradient-gold:hover {
+  background-position: right center;
+  color: white;
+}

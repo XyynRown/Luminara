@@ -104,7 +104,10 @@ include_once __DIR__ . '/../components/header.php';
 
           <!-- Button -->
           <p id="warningText" class="text-danger f-s1"></p>
-          <button type="submit" class="btn gradient-gold w-100 mb-3"><strong>Register</strong></button>
+          <button id="registerBtn" type="submit" class="btn gradient-gold w-100 mb-3">
+            <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status"></span>
+            <span id="btnText" class=""><strong>Register</strong></span>
+          </button>
         </form>
         <hr>
         <p class="text-center mt-3 mb-0 d-flex">Sudah punya akun? 
