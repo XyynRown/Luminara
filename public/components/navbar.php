@@ -3,10 +3,9 @@
   <!-- Left navbar links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <!-- Tombol untuk toggle sidebar -->
-      <a class="nav-link" data-widget="pushmenu" href="#" role="button">
-        <i class="fas fa-bars"></i>
-      </a>
+    <a class="nav-link d-none d-md-block" data-widget="pushmenu" href="#" role="button">
+      <i class="fas fa-bars"></i>
+    </a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
       <a href="index.php" class="nav-link">Home</a>
@@ -18,8 +17,8 @@
 
   <!-- Right navbar links -->
   <ul class="navbar-nav ml-auto">
-    <!-- Notifications Dropdown Menu -->
-    <li class="nav-item dropdown">
+    <!-- Notifications -->
+    <!-- <li class="nav-item dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#">
         <i class="far fa-bell"></i>
         <span class="badge badge-warning navbar-badge">3</span>
@@ -31,18 +30,10 @@
           <i class="fas fa-envelope mr-2"></i> 1 new message
         </a>
       </div>
-    </li>
+    </li> -->
+    <a class="nav-link d-md-none" data-widget="pushmenu" href="#" role="button">
+      <i class="fas fa-bars"></i>
+    </a>
 
-    <!-- User Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="#">
-        <i class="fas fa-user-circle"></i>
-      </a>
-      <div class="dropdown-menu dropdown-menu-right">
-        <a href="profile.php" class="dropdown-item">Profile</a>
-        <div class="dropdown-divider"></div>
-        <a href="logout.php" class="dropdown-item text-danger">Logout</a>
-      </div>
-    </li>
   </ul>
 </nav>

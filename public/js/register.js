@@ -1,3 +1,10 @@
+function load() {
+  var element = document.getElementById("btnSpinner");
+  element.classList.remove("d-none");
+  var element = document.getElementById("btnText");
+  element.classList.add("d-none");
+}
+
 const passwordInput = document.getElementById("password");
 const togglePassword = document.getElementById("togglePassword");
 
@@ -39,28 +46,28 @@ document
       document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
 
-    if(document.getElementById('password').value === document.getElementById('verificationPassword').value){
-
-      document
-        .getElementById('warningText')
-        .textContent = "";
+    if (
+      document.getElementById("password").value ===
+      document.getElementById("verificationPassword").value
+    ) {
+      document.getElementById("warningText").textContent = "";
 
       const formData = {
         username: username,
         email: email,
-        password: document.getElementById('password').value
+        password: document.getElementById("password").value,
       };
 
-      try{
+      try {
         const res = await fetch("/index.php?route=verification", {
           method: "POST",
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({email})
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email }),
         });
 
         const result = await response.json();
         alert(result.message);
-      } catch (err){
+      } catch (err) {
         console.error("Error: ", err);
       }
       // try{const res = await fetch("/index.php?route=register", {
@@ -69,19 +76,17 @@ document
       //         body: JSON.stringify(formData)
       //     });
       //     const data = await res.json();
-  
+
       //     if(data.success){
-              
+
       //     }
       // } catch(err){
       //     console.error("Error: ", err);
       // }
-      
+
       // window.location.href = window.location.origin + "/verification";
     } else {
-      document
-        .getElementById('warningText')
-        .textContent = "Password tidak sama";
+      document.getElementById("warningText").textContent =
+        "Password tidak sama";
     }
-
   });

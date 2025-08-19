@@ -22,4 +22,4 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="/../assets/img/favicon.ico">
 </head>
-<body>
+<body class="hold-transition sidebar-mini layout-fixed">
