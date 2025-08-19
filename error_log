@@ -1,0 +1,641 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+[17-Aug-2025 13:31:45 UTC] PHP Warning:  require(D:\localweb\WEB_LOCAL\Luminara\public/pages/not_found.php): Failed to open stream: No such file or directory in D:\localweb\WEB_LOCAL\Luminara\public\index.php on line 20
+[17-Aug-2025 13:31:45 UTC] PHP Stack trace:
+[17-Aug-2025 13:31:45 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\index.php:0
+[17-Aug-2025 13:31:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\localweb\WEB_LOCAL\Luminara\public/pages/not_found.php' (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\public\index.php:20
+Stack trace:
+#0 {main}
+  thrown in D:\localweb\WEB_LOCAL\Luminara\public\index.php on line 20
+=======
+[17-Aug-2025 13:43:29 UTC] PHP Warning:  require(C:\laragon\www\luminara\public../includes/db.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:43:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\public../includes/db.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:45 UTC] PHP Warning:  require(C:\laragon\www\luminara\public../includes/config.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\public../includes/config.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:47 UTC] PHP Warning:  require(C:\laragon\www\luminara\public../includes/config.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\public../includes/config.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:48 UTC] PHP Warning:  require(C:\laragon\www\luminara\public../includes/config.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\public../includes/config.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:49 UTC] PHP Warning:  require(C:\laragon\www\luminara\public../includes/config.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\public../includes/config.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:49 UTC] PHP Warning:  require(C:\laragon\www\luminara\public../includes/config.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\public../includes/config.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:58 UTC] PHP Warning:  require(C:\laragon\www\luminara\publicconfig.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:44:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\publicconfig.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:45:00 UTC] PHP Warning:  require(C:\laragon\www\luminara\publicconfig.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:45:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\publicconfig.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:45:01 UTC] PHP Warning:  require(C:\laragon\www\luminara\publicconfig.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\public\index.php on line 4
+[17-Aug-2025 13:45:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\publicconfig.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\public\index.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\luminara\public\index.php on line 4
+>>>>>>> b54f72e (push backend wlee 18/8/25)
+[19-Aug-2025 02:14:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:14:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:10 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:23 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:41 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:16:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:17:48 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:17:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:18:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:18:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:24:34 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:24:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:25:45 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:25:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:28:58 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:28:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+<<<<<<< HEAD
+[19-Aug-2025 02:32:14 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:32:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:28 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:30 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:31 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:37 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:37 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:37 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:45 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:47 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:47 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:47 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:50 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:50 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:50 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:57 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:57 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:40:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(43): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:09 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:56 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:43:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:22 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:23 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:24 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:24 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:44:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:45:00 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:45:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:45:01 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:45:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:46:07 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:46:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:47:27 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:47:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:50:41 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:50:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:50:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:50:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:53:07 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:53:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:58:49 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 02:58:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:4
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 4
+[19-Aug-2025 03:05:55 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:05:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:5
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:07:27 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:07:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:5
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:09:44 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:09:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:5
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:14:51 UTC] PHP Warning:  require(C:\laragon\www\luminara\includesmailer.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:14:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\laragon\www\luminara\includesmailer.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\auth.php:5
+Stack trace:
+#0 C:\laragon\www\luminara\public\index.php(37): require()
+#1 {main}
+  thrown in C:\laragon\www\luminara\includes\auth.php on line 5
+[19-Aug-2025 03:29:59 UTC] PHP Warning:  require(/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:29:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/../vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\mailer.php:6
+Stack trace:
+#0 C:\laragon\www\luminara\includes\auth.php(5): require()
+#1 C:\laragon\www\luminara\public\index.php(37): require('C:\\laragon\\www\\...')
+#2 {main}
+  thrown in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:31:17 UTC] PHP Warning:  require(/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:31:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/../vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\mailer.php:6
+Stack trace:
+#0 C:\laragon\www\luminara\includes\auth.php(5): require()
+#1 C:\laragon\www\luminara\public\index.php(37): require('C:\\laragon\\www\\...')
+#2 {main}
+  thrown in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:32:16 UTC] PHP Warning:  require(/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:32:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/../vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\mailer.php:6
+Stack trace:
+#0 C:\laragon\www\luminara\includes\auth.php(5): require()
+#1 C:\laragon\www\luminara\public\index.php(37): require('C:\\laragon\\www\\...')
+#2 {main}
+  thrown in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:34:07 UTC] PHP Warning:  require(/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\laragon\www\luminara\includes\mailer.php on line 6
+[19-Aug-2025 03:34:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/../vendor/autoload.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\luminara\includes\mailer.php:6
+Stack trace:
+#0 C:\laragon\www\luminara\includes\auth.php(5): require()
+#1 C:\laragon\www\luminara\public\index.php(37): require('C:\\laragon\\www\\...')
+#2 {main}
+  thrown in C:\laragon\www\luminara\includes\mailer.php on line 6
+=======
+[19-Aug-2025 05:30:55 UTC] PHP Warning:  require(D:\localweb\WEB_LOCAL\Luminara\includesmailer.php): Failed to open stream: No such file or directory in D:\localweb\WEB_LOCAL\Luminara\includes\auth.php on line 4
+[19-Aug-2025 05:30:55 UTC] PHP Stack trace:
+[19-Aug-2025 05:30:55 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\index.php:0
+[19-Aug-2025 05:30:55 UTC] PHP   2. require() D:\localweb\WEB_LOCAL\Luminara\public\index.php:43
+[19-Aug-2025 05:30:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\localweb\WEB_LOCAL\Luminara\includesmailer.php' (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\includes\auth.php:4
+Stack trace:
+#0 D:\localweb\WEB_LOCAL\Luminara\public\index.php(43): require()
+#1 {main}
+  thrown in D:\localweb\WEB_LOCAL\Luminara\includes\auth.php on line 4
+[19-Aug-2025 05:30:58 UTC] PHP Warning:  require(D:\localweb\WEB_LOCAL\Luminara\includesmailer.php): Failed to open stream: No such file or directory in D:\localweb\WEB_LOCAL\Luminara\includes\auth.php on line 4
+[19-Aug-2025 05:30:58 UTC] PHP Stack trace:
+[19-Aug-2025 05:30:58 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\index.php:0
+[19-Aug-2025 05:30:58 UTC] PHP   2. require() D:\localweb\WEB_LOCAL\Luminara\public\index.php:43
+[19-Aug-2025 05:30:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\localweb\WEB_LOCAL\Luminara\includesmailer.php' (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\includes\auth.php:4
+Stack trace:
+#0 D:\localweb\WEB_LOCAL\Luminara\public\index.php(43): require()
+#1 {main}
+  thrown in D:\localweb\WEB_LOCAL\Luminara\includes\auth.php on line 4
+>>>>>>> dcc4deb6391f8c09fed1968facb269fcad556960
+>>>>>>> 7eec93478fb77956714cc899c4f81851b061f68c

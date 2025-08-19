@@ -20,7 +20,7 @@ document
     const formData = new FormData(this);
 
     try {
-      const res = await fetch("/index.php?route=login", {
+      const res = await fetch("/api/login", {
         method: "POST",
         body: formData,
       });
