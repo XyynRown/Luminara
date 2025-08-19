@@ -3,7 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require './vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 function sendEmail($to, $subject, $body){
     $mail = new PHPMailer(true);
@@ -15,7 +15,7 @@ function sendEmail($to, $subject, $body){
         $mail->SMTPAuth = true; 
         $mail->Username = 'skyzzo2105@gmail.com';
         $mail->Password = 'arkl yhzp zhag pker';;
-        $mail->SMTPSecure = PHPMAILER::ENCRYPTION_STARTTLS;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         $mail->setFrom('skyzzo2105@gmail.com', 'Luminara');
@@ -28,6 +28,11 @@ function sendEmail($to, $subject, $body){
         $mail->send();
         return true;
     } catch(Exception $e){
-        return "Mailer ERROR: {$mail->ErrorInfo}";
+        // return "Mailer ERROR: {$mail->ErrorInfo}";
+        echo json_encode([
+            "success" => false,
+            "message" => "Mailer ERROR: {$mail->ErrorInfo}"
+        ]);
+        exit;
     }
 }

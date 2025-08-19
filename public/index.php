@@ -1,8 +1,34 @@
 <?php
 $request = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
-$route = $_GET['route'] ?? '';
 
 require __DIR__ . '/../includes/config.php';
+
+if (str_starts_with($request, "api/")) {
+    header("Content-Type: application/json");
+
+    require __DIR__ . "/../includes/auth.php";
+
+    switch ($request) {
+        case "api/login":
+            login($conn, $jwt_token);
+            break;
+
+        case "api/register":
+            register($conn, $jwt_token);
+            break;
+
+        case "api/verification":
+            verification();
+            break;
+
+        default:
+            http_response_code(404);
+            echo json_encode(["error" => "API route not found"]);
+            break;
+    }
+
+    exit;
+}
 
 switch ($request) {
     case '':
@@ -18,32 +44,6 @@ switch ($request) {
         require __DIR__ . '/pages/email_verification.php';
         break;
     default:
-        $file = __DIR__ . "/public/$request.php";
-        if (file_exists($file)) {
-            require $file;
-        } else {
-            http_response_code(404);
-            require __DIR__ . '/pages/not_found.php';
-        }
-        break;
-}
-
-switch ($route) {
-    case "login":
-        require __DIR__ . "/../includes/auth.php";
-        login($conn, $jwt_token);
-        break;
-
-    case "register":
-        require __DIR__ . "/../includes/auth.php";
-        register($conn, $jwt_token);
-        break;
-
-    case "verification":
-        require __DIR__ . "/../includes/auth.php";
-        verification();
-        break;
-        
-    default:
+        require __DIR__ . '/pages/not_found.php';
         break;
 }

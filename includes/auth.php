@@ -1,7 +1,8 @@
 <?php
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
-require __DIR__ . "mailer.php";
+header('Content-Type: application/json');
+require __DIR__ . "/mailer.php";
 //temp
 $jwt_token = 'gacor999';
 
@@ -58,7 +59,7 @@ function register($conn) {
 }
 
 function verification(){
-    $data = json_decode(file_get_contents("php://input", true));
+    $data = json_decode(file_get_contents("php://input"), true);
     $email = $data['email'] ?? null;
 
     if(!$email){

@@ -262,3 +262,17 @@
 127.0.0.1 - - [18/Aug/2025:14:46:35 +0700] "GET / HTTP/1.1" 200 2767
 127.0.0.1 - - [18/Aug/2025:14:46:35 +0700] "GET /js/Verifikasi.js HTTP/1.1" 404 1454
 >>>>>>> 8684a2185d228676cdee4080c05225499a840166
+127.0.0.1 - - [19/Aug/2025:10:34:01 +0700] "GET /register? HTTP/1.1" 200 5698
+127.0.0.1 - - [19/Aug/2025:10:34:01 +0700] "GET /js/register.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Aug/2025:10:34:07 +0700] "POST /index.php?route=verification HTTP/1.1" 200 2074
+127.0.0.1 - - [19/Aug/2025:10:35:51 +0700] "GET /register? HTTP/1.1" 200 5698
+127.0.0.1 - - [19/Aug/2025:10:35:55 +0700] "POST /index.php?route=verification HTTP/1.1" 200 1502
+127.0.0.1 - - [19/Aug/2025:10:36:03 +0700] "POST /index.php?route=verification HTTP/1.1" 200 1502
+127.0.0.1 - - [19/Aug/2025:10:41:07 +0700] "GET /register? HTTP/1.1" 200 5698
+127.0.0.1 - - [19/Aug/2025:10:41:07 +0700] "GET /js/register.js HTTP/1.1" 200 2806
+127.0.0.1 - - [19/Aug/2025:10:41:13 +0700] "POST /api/verification HTTP/1.1" 200 48
+127.0.0.1 - - [19/Aug/2025:10:43:01 +0700] "GET /register? HTTP/1.1" 200 5698
+127.0.0.1 - - [19/Aug/2025:10:43:02 +0700] "GET /js/register.js HTTP/1.1" 200 2746
+127.0.0.1 - - [19/Aug/2025:10:43:14 +0700] "POST /api/verification HTTP/1.1" 200 48
+127.0.0.1 - - [19/Aug/2025:10:43:34 +0700] "GET /verification HTTP/1.1" 200 4345
+127.0.0.1 - - [19/Aug/2025:10:43:34 +0700] "GET /js/register.js HTTP/1.1" 304 -
