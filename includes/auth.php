@@ -39,7 +39,7 @@ function login($conn, $jwt_token) {
     }
 }
 
-function register($conn) {
+function register($conn, $jwt_token) {
     $data = json_decode(file_get_contents("php://input"), true);
 
     if (!isset($data['email'], $data['password'])) {
