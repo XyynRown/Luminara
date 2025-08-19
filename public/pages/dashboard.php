@@ -5,13 +5,22 @@ $css = "dashboard";
 $script = "dashboard";
 
 ?>
+
+
+
 <?php
 include_once __DIR__ . '/../components/header.php';
 ?>
+
+
 <?php
 include_once __DIR__ . '/../components/navbar.php';
 ?>
 
+
+<?php
+include_once __DIR__ . '/../components/sidebar.php';
+?>
 
 
 <?php

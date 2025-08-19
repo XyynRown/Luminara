@@ -1,34 +1,48 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <!-- <a class="navbar-brand" href="#">Navbar1</a> -->
-     <img src="../assets/img/logo.png" alt="Logo" style="width: autopx; height: 50px; ">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div>
-        <img src="../assets/img/photo_profile/ppkosong.jpg" alt="profile_picture" class="" style="width: 40px; height: 40px; border-radius: 50%;">
-        <span class="ms-2">Akun Demo</span>
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <!-- Left navbar links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <!-- Tombol untuk toggle sidebar -->
+      <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+        <i class="fas fa-bars"></i>
+      </a>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="index.php" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block">
+      <a href="contact.php" class="nav-link">Contact</a>
+    </li>
+  </ul>
+
+  <!-- Right navbar links -->
+  <ul class="navbar-nav ml-auto">
+    <!-- Notifications Dropdown Menu -->
+    <li class="nav-item dropdown">
+      <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="far fa-bell"></i>
+        <span class="badge badge-warning navbar-badge">3</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+        <span class="dropdown-header">3 Notifications</span>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">
+          <i class="fas fa-envelope mr-2"></i> 1 new message
+        </a>
       </div>
-    </div>
-  </div>
+    </li>
+
+    <!-- User Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="fas fa-user-circle"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a href="profile.php" class="dropdown-item">Profile</a>
+        <div class="dropdown-divider"></div>
+        <a href="logout.php" class="dropdown-item text-danger">Logout</a>
+      </div>
+    </li>
+  </ul>
 </nav>
