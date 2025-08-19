@@ -3,6 +3,7 @@
 $title = "Login";
 $css = "login"; 
 $script = "login";
+$checkAuth = false; // Tidak perlu autentikasi untuk halaman verifikasi
 
 ?>
 <?php
@@ -70,6 +71,7 @@ include_once __DIR__ . '/../components/header.php';
             </div>
           </div>
           <br>
+          <p id="warningText" class="text-danger"></p>
           <!-- Button -->
            <div class="d-grid gap-2 mb-3 d-flex justify-content-center">
               <button type="button" 

@@ -8,18 +8,22 @@ if (str_starts_with($request, "api/")) {
 
     switch ($request) {
         case "api/login":
-            require __DIR__ . '/../includes/auth.php';
+            require __DIR__ . '/../includes/login.php';
             login($conn, $jwt_token);
             break;
-
+        
         case "api/sendOTP":
-            require __DIR__ . '/../includes/auth.php';
+            require __DIR__ . '/../includes/register.php';
             sendOTP($conn);
             break;
 
         case "api/verifyOTP":
-            require __DIR__ . '/../includes/auth.php';
+            require __DIR__ . '/../includes/register.php';
             verifyOTP($conn);
+            break;
+
+        case "api/auth":
+            require __DIR__ . '/../includes/checkAuth.php';
             break;
 
         case "api/logout":

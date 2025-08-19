@@ -17,20 +17,24 @@ document
   .getElementById("loginForm")
   .addEventListener("submit", async function (e) {
     e.preventDefault();
-    const formData = new FormData(this);
+    const formData = {
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+    };
 
     try {
       const res = await fetch("/api/login", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
       });
       const data = await res.json();
 
       if (data.success) {
         alert("Login berhasil!");
-        window.location.href = window.location.origin + "/dashboard";
+        window.location.href = window.location.origin + "/";
       } else {
-        alert("Login gagal: " + data.message);
+        document.getElementById("warningText").textContent = data.message;
       }
     } catch (err) {
       console.error("Error:", err);

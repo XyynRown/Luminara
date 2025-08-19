@@ -5,35 +5,28 @@ function load() {
   element.classList.add("d-none");
 }
 
-const passwordInput = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
+function togglePasswordVisibility(togglePassword, passwordInput) {
+  togglePassword.addEventListener("click", function () {
+    const type =
+      passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
 
-togglePassword.addEventListener("click", function () {
-  const type =
-    passwordInput.getAttribute("type") === "password" ? "text" : "password";
-  passwordInput.setAttribute("type", type);
+    // ganti ikon
+    this.innerHTML =
+      type === "password"
+        ? '<i class="bi bi-eye"></i>'
+        : '<i class="bi bi-eye-slash"></i>';
+  });
+}
 
-  // ganti ikon
-  this.innerHTML =
-    type === "password"
-      ? '<i class="bi bi-eye"></i>'
-      : '<i class="bi bi-eye-slash"></i>';
-});
-
-const vpasswordInput = document.getElementById("verificationPassword");
-const toggleVPassword = document.getElementById("toggleVerificationPassword");
-
-toggleVPassword.addEventListener("click", function () {
-  const type =
-    vpasswordInput.getAttribute("type") === "password" ? "text" : "password";
-  vpasswordInput.setAttribute("type", type);
-
-  // ganti ikon
-  this.innerHTML =
-    type === "password"
-      ? '<i class="bi bi-eye"></i>'
-      : '<i class="bi bi-eye-slash"></i>';
-});
+togglePasswordVisibility(
+  document.getElementById("togglePassword"),
+  document.getElementById("password")
+);
+togglePasswordVisibility(
+  document.getElementById("toggleVerificationPassword"),
+  document.getElementById("verificationPassword")
+); 
 
 document
   .getElementById("registerForm")
@@ -74,8 +67,7 @@ document
           // alert("OTP terkirim!");
           window.location.href = window.location.origin + "/verification";
         } else {
-          document.getElementById("warningText").textContent =
-            "Gagal mengirim OTP: " + result.message;
+          document.getElementById("warningText").textContent = result.message;
         }
       } catch (err) {
         console.error("Error: ", err);

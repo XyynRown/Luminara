@@ -3,6 +3,7 @@
 $title = "Verifikasi ";
 $css = "login"; 
 $script = "verification";
+$checkAuth = false; // Tidak perlu autentikasi untuk halaman verifikasi
 
 ?>
 <?php

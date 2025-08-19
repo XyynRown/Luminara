@@ -3,6 +3,7 @@
 $title = "Luminara";
 $css = "dashboard"; 
 $script = "dashboard";
+$checkAuth = true;
 
 ?>
 
