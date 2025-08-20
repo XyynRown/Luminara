@@ -32,7 +32,7 @@ document
 
       if (data.success) {
         alert("Login berhasil!");
-        window.location.href = window.location.origin + "/";
+        window.location.href = "/";
       } else {
         document.getElementById("warningText").textContent = data.message;
       }

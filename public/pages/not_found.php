@@ -11,10 +11,12 @@ include_once __DIR__ . '/../components/header.php';
 ?>
 
 <div class="d-flex flex-column align-items-center justify-content-center vh-100 text-center">
-    <div class="mb-4 d-flex flex-column align-items-center">
-        
-        <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid me-3" style="width: 150px; height: 150px;">
-        <h1 class="display-1 fw-bold text-disable">404</h1>
+    <div class="mb-4 d-flex align-items-center">
+        <!-- <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid me-3" style="width: 150px; height: 150px;">
+        <h1 class="display-1 fw-bold text-disable">404</h1> -->
+        <h1 class="display-1 fw-bold text-disable">4</h1>
+        <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid" style="width: 90px; height: 90px;">
+        <h1 class="display-1 fw-bold text-disable">4</h1>
     </div>
 
     <h2 class="mb-3">Oops! Halaman tidak ditemukan</h2>
