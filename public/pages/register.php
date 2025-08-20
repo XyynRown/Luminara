@@ -3,6 +3,7 @@
 $title = "Register";
 $css = "login"; 
 $script = "register";
+$checkAuth = false; // Tidak perlu autentikasi untuk halaman verifikasi
 
 ?>
 <?php
@@ -72,11 +73,6 @@ include_once __DIR__ . '/../components/header.php';
           <div class="row">
             <div class="col">
               <input type="email" class="form-control" id="email" placeholder="example@xyz.com" aria-label="Email" required>
-            </div>
-            <div class="col">
-              <button class="btn gradient-gold w-100" type="button">
-                <strong>Check Email</strong>
-              </button>
             </div>
           </div>
 

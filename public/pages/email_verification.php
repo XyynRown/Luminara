@@ -3,6 +3,7 @@
 $title = "Verifikasi ";
 $css = "login"; 
 $script = "verification";
+$checkAuth = false; // Tidak perlu autentikasi untuk halaman verifikasi
 
 ?>
 <?php
@@ -53,7 +54,7 @@ include_once __DIR__ . '/../components/header.php';
         </div>
         <h3><strong>Verifikasi Email</strong></h3>
         <div class="d-flex  mb-4">
-          <p class="text-secondary mb-4">Masukan kode OTP yang dikirim melewaati email sebelum <p style="opacity: 0;">_</p> <strong style="color:#c73232;" id="timer">05:00</strong> </p>
+          <p class="text-secondary mb-4">Masukan kode OTP yang dikirim melewati email sebelum <p style="opacity: 0;">_</p> <strong style="color:#c73232;" id="timer">05:00</strong> </p>
         </div>
         
         <form id="verificationForm">
@@ -67,25 +68,20 @@ include_once __DIR__ . '/../components/header.php';
               <input type="text" class="form-control" id="otp" placeholder="Masukan kode OTP" aria-label="otp">
             </div>
             <div class="col">
-            <button id="resendBtn" 
-                    class="btn gradient-gold w-100 w-md-50" 
-                    type="button" 
-                    onclick="startResendCountdown()">
+            <button id="resendOTP" class="btn gradient-gold w-100 w-md-50" type="button">
                 <strong>Kirim ulang</strong>
             </button>
             </div>
           </div>
+          <p id="warningText" class="text-danger"></p>
 
           <br>
           <!-- Button -->
-          <button type="submit" class="btn gradient-gold w-100" onclick="window.location.href='/'">
+          <button type="submit" class="btn gradient-gold w-100">
                 <strong>
                   Lanjut
                 </strong>
           </button>
-
-
-
         </form>
         <hr>
           <div class="d-flex justify-content-between mt-3">

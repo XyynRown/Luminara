@@ -3,6 +3,7 @@
 $title = "🤣Not Found";
 $css = "not_found"; 
 $script = "not_found";
+$checkAuth = false; // Tidak perlu autentikasi untuk halaman verifikasi
 
 ?>
 <?php

@@ -6,7 +6,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 
-  <script src="../js/<?= $script ?? "login"; ?>.js"></script>
-
+  <script type="<?= $type ?? null ?>" src="../js/<?= $script ?? "login"; ?>.js"></script>
+  <?php if (!empty($checkAuth) && $checkAuth === true): ?>
+    <script src="/../js/auth.js"></script>
+  <?php else: ?>
+    <script>
+      window.checkAuth = false;
+    </script>
+  <?php endif; ?>
 </body>
 </html>

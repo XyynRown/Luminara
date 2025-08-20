@@ -22,30 +22,60 @@ function updateTimer() {
 updateTimer();
 const countdown = setInterval(updateTimer, 1000);
 
-function startResendCountdown() {
-  const btn = document.getElementById("resendBtn");
-  let countdown = 120; // 1 menit
+const formData = JSON.parse(localStorage.getItem("formData"));
 
-  // ganti style button
-  btn.classList.remove("gradient-gold");
-  btn.classList.add("btn-secondary");
-  btn.disabled = true;
+document
+  .getElementById("resendOTP")
+  .addEventListener("click", async function () {
+    try {
+      const res = await fetch("/api/sendOTP", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-  // set tulisan awal
-  btn.innerHTML = `<strong>Tunggu ${countdown}s</strong>`;
+      const result = await res.json();
 
-  // hitung mundur
-  const timer = setInterval(() => {
-    countdown--;
-    btn.innerHTML = `<strong>Tunggu ${countdown}s</strong>`;
+      //BUAT TAMPILKAN PESAN BERHASIL ATAU GAGAL --NANTI--
 
-    if (countdown <= 0) {
-      clearInterval(timer);
-      // reset ke keadaan semula
-      btn.classList.remove("btn-secondary");
-      btn.classList.add("gradient-gold");
-      btn.disabled = false;
-      btn.innerHTML = "<strong>Kirim ulang</strong>";
+      // if (result.success) {
+      //   alert("OTP terkirim! Silakan cek email Anda.");
+      // } else {
+      //   alert("Gagal mengirim OTP: " + result.message);
+      // }
+    } catch (err) {
+      console.error("Error:", err);
     }
-  }, 1000);
-}
+  });
+
+document
+  .getElementById("verificationForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const otp = document.getElementById("otp").value;
+    formData.otp = otp; // tambahkan OTP ke formData
+
+    document.getElementById("warningText").textContent = ""; // reset pesan peringatan
+
+    try {
+      const res = await fetch("/api/verifyOTP", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        // alert('Verifikasi berhasil! Anda akan dialihkan ke halaman utama.');
+        window.location.href = "/login";
+      } else {
+        // alert('Verifikasi gagal: ' + result.message);
+        document.getElementById("warningText").textContent =
+          "Verifikasi gagal: " + result.message;
+      }
+    } catch (err) {
+      console.error("Error:", err);
+    }
+  });

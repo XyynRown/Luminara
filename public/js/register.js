@@ -5,35 +5,28 @@ function load() {
   element.classList.add("d-none");
 }
 
-const passwordInput = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
+function togglePasswordVisibility(togglePassword, passwordInput) {
+  togglePassword.addEventListener("click", function () {
+    const type =
+      passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
 
-togglePassword.addEventListener("click", function () {
-  const type =
-    passwordInput.getAttribute("type") === "password" ? "text" : "password";
-  passwordInput.setAttribute("type", type);
+    // ganti ikon
+    this.innerHTML =
+      type === "password"
+        ? '<i class="bi bi-eye"></i>'
+        : '<i class="bi bi-eye-slash"></i>';
+  });
+}
 
-  // ganti ikon
-  this.innerHTML =
-    type === "password"
-      ? '<i class="bi bi-eye"></i>'
-      : '<i class="bi bi-eye-slash"></i>';
-});
-
-const vpasswordInput = document.getElementById("verificationPassword");
-const toggleVPassword = document.getElementById("toggleVerificationPassword");
-
-toggleVPassword.addEventListener("click", function () {
-  const type =
-    vpasswordInput.getAttribute("type") === "password" ? "text" : "password";
-  vpasswordInput.setAttribute("type", type);
-
-  // ganti ikon
-  this.innerHTML =
-    type === "password"
-      ? '<i class="bi bi-eye"></i>'
-      : '<i class="bi bi-eye-slash"></i>';
-});
+togglePasswordVisibility(
+  document.getElementById("togglePassword"),
+  document.getElementById("password")
+);
+togglePasswordVisibility(
+  document.getElementById("toggleVerificationPassword"),
+  document.getElementById("verificationPassword")
+); 
 
 document
   .getElementById("registerForm")
@@ -57,45 +50,32 @@ document
         email: email,
         password: document.getElementById("password").value,
       };
-
-      load();
-
-      try {
-        const res = await fetch("/api/verification", {
+      localStorage.setItem("formData", JSON.stringify(formData));
+      
+      load()
+      
+      try{
+        const res = await fetch("/api/sendOTP", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
         });
-
+        
         const result = await res.json();
-
+        
         if (result.success) {
           // alert("OTP terkirim!");
           window.location.href = window.location.origin + "/verification";
         } else {
-          // alert("Gagal: " + result.message);
-          return;
+          document.getElementById("warningText").textContent = result.message;
         }
       } catch (err) {
         console.error("Error: ", err);
       }
-      // try{const res = await fetch("/index.php?route=register", {
-      //         method: "POST",
-      //         headers: {'Content-Type': 'application/json'},
-      //         body: JSON.stringify(formData)
-      //     });
-      //     const data = await res.json();
-
-      //     if(data.success){
-
-      //     }
-      // } catch(err){
-      //     console.error("Error: ", err);
-      // }
-
-      // window.location.href = window.location.origin + "/verification";
     } else {
       document.getElementById("warningText").textContent =
-        "Password tidak sama";
+      "Password tidak sama";
     }
   });
+  
+  
