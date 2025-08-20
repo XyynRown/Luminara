@@ -67,7 +67,10 @@ include_once __DIR__ . '/../components/header.php';
               <input type="text" class="form-control" id="otp" placeholder="Masukan kode OTP" aria-label="otp">
             </div>
             <div class="col">
-            <button class="btn gradient-gold w-100 w-md-50" type="button">
+            <button id="resendBtn" 
+                    class="btn gradient-gold w-100 w-md-50" 
+                    type="button" 
+                    onclick="startResendCountdown()">
                 <strong>Kirim ulang</strong>
             </button>
             </div>
