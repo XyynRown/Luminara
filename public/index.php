@@ -15,7 +15,7 @@ if (str_starts_with($request, "api/")) {
         
         case "api/sendOTP":
             require __DIR__ . '/../includes/register.php';
-            sendOTP($conn);
+            sendOTP($conn, $mailconfig);
             break;
 
         case "api/verifyOTP":
@@ -25,7 +25,7 @@ if (str_starts_with($request, "api/")) {
 
         case "api/resetPassword":
             require __DIR__ . '/../includes/resetPassword.php';
-            resetPassword($conn);
+            resetPassword($base_url,$conn, $mailconfig);
             break;
 
         case "api/auth":

@@ -17,7 +17,7 @@ function checkEmail($conn) {
     }
 }
 
-function sendOTP($conn){
+function sendOTP($conn, $mailconfig) {
     $data = json_decode(file_get_contents("php://input"), true);
     $email = $data['email'] ?? null;
 
@@ -35,7 +35,7 @@ function sendOTP($conn){
         exit;
     } else {
         $otp = rand(100000, 999999);
-        $otpExpired = date("Y-m-d H:i:s", time() + (5 * 60)); // 5 menit dari sekarang
+        $otpExpired = date("Y-m-d H:i:s", time() + (5 * 60)); // 5 menit
 
         $template = file_get_contents("../public/components/mailbox.php");
         $subject = "Kode OTP Anda";
@@ -58,7 +58,7 @@ function sendOTP($conn){
             $stmt->execute([$email, $otp, $otpExpired]);
         }
 
-        $send = sendEmail($email, $subject, $body);
+        $send = sendEmail($email, $subject, $body, $mailconfig);
 
         if($send === true){
             echo json_encode(["success" => true, "message" => "OTP berhasil dikirm"]);

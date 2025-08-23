@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 require __DIR__ . "/mailer.php";
 
-function resetPassword($conn){
+function resetPassword($base_url ,$conn, $mailconfig) {
     $data = json_decode(file_get_contents("php://input"), true);
     $email = $data['email'] ?? null;
 
@@ -36,7 +36,7 @@ function resetPassword($conn){
         }
 
         $template = file_get_contents("../public/components/mailbox.php");
-        $link = "http://luminara.rithz/resetPassword?token=$token"; // Link to reset password
+        $link = "$base_url/resetPassword?token=$token"; // Link to reset password
 
         $subject = "Reset Password Anda";
         $body = str_replace(
@@ -45,7 +45,7 @@ function resetPassword($conn){
             $template
         );
 
-        $send = sendEmail($email, $subject, $body);
+        $send = sendEmail($email, $subject, $body, $mailconfig);
         if($send === true){
             echo json_encode(["success" => true, "message" => "Email reset password telah dikirim"]);
         } else {
