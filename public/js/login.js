@@ -33,7 +33,7 @@ document
       if (data.success) {
         alert("Login berhasil!");
         window.location.href = "/";
-      } else {
+      } else {d
         document.getElementById("warningText").textContent = data.message;
       }
     } catch (err) {

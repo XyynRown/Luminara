@@ -6,7 +6,7 @@ function checkEmail($conn) {
     $data = json_decode(file_get_contents("php://input"), true);
     $email = $data['email'] ?? null;
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
     $stmt->execute([$email]);
     $existing = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -26,7 +26,7 @@ function sendOTP($conn){
         exit;
     }
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
     $stmt->execute([$email]);
     $existing = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -40,8 +40,8 @@ function sendOTP($conn){
         $template = file_get_contents("../public/components/mailbox.php");
         $subject = "Kode OTP Anda";
         $body = str_replace(
-            ["{{OTP}}", "{{EXPIRED}}"],
-            [$otp, 5],
+            ["{{TITLE}}" ,"{{HEADER}}", "{{CONTENTS}}"],
+            ["Verifikasi Email Anda" ,"Gunakan kode berikut untuk menyelesaikan pendaftaran:", $otp],
             $template
         );
 

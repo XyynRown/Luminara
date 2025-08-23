@@ -95,7 +95,7 @@ include_once __DIR__ . '/../components/header.php';
             </p>
             <p class="mb-0">
               Lupa password?
-              <a style="color:#f8c471;" href="forgot_password">Iya,hehe</a>
+              <a style="color:#f8c471;" href="resetPassword">Iya,hehe</a>
             </p>
           </div>
       </div>
