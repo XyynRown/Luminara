@@ -26,14 +26,18 @@ document
       const res = await fetch("/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
       const data = await res.json();
 
       if (data.success) {
         alert("Login berhasil!");
         window.location.href = "/";
+<<<<<<< HEAD
+      } else {
+=======
       } else {d
+>>>>>>> b1066de0d79f36591f5b39e4f2dd35f1c5f0b85f
         document.getElementById("warningText").textContent = data.message;
       }
     } catch (err) {

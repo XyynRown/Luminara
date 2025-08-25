@@ -18,6 +18,30 @@ function updateTimer() {
   timeLeft--;
 }
 
+document.getElementById("resendOTP").addEventListener("click", function () {
+  let btn = this;
+  let countdown = 60; // detik
+  btn.disabled = true; // disable button
+  btn.classList.remove("gradient-gold");
+  btn.classList.add("btn-secondary");
+
+  let originalText = btn.innerHTML;
+
+  // Update text tiap detik
+  let timer = setInterval(function () {
+    btn.innerHTML = `<strong>Tunggu ${countdown}s</strong>`;
+    countdown--;
+
+    if (countdown < 0) {
+      clearInterval(timer);
+      btn.disabled = false; // aktifkan lagi
+      btn.classList.remove("btn-secondary");
+      btn.classList.add("gradient-gold");
+      btn.innerHTML = originalText;
+    }
+  }, 1000);
+});
+
 // langsung jalan saat halaman dibuka
 updateTimer();
 const countdown = setInterval(updateTimer, 1000);

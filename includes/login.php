@@ -23,10 +23,16 @@ function login($conn, $jwt_token) {
             $jwt = JWT::encode($payload, $jwt_token, 'HS256');
 
             echo json_encode([
+<<<<<<< HEAD
+                "status" => "true",
+=======
                 "success" => true,
+>>>>>>> b1066de0d79f36591f5b39e4f2dd35f1c5f0b85f
                 "message" => "Login berhasil",
                 "token" => $jwt
             ]);
+            
+            
         } else {
             echo json_encode(["success" => true, "message" => "Email atau password salah"]);
         }

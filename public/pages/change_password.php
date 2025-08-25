@@ -2,7 +2,7 @@
 
 $title = "Reset Password";
 $css = "change_password"; 
-$script = "resetPassword";
+$script = "change_password";
 $checkAuth = false; 
 
 ?>
@@ -14,21 +14,22 @@ include_once __DIR__ . '/../components/header.php';
   <div class="col-md-5">
     <div class="card shadow-lg border-0 rounded-4">
       <div class="card-body p-4">
-        <h3 class="text-center mb-4">Reset Password</h3>
-        
-        <br>
-        <form method="POST" action="" id="resetPasswordForm">
+        <h3 class="text-center mb-4">Change Your Password</h3>
+
+        <form method="POST" action="reset_password_process.php">
           <!-- token hidden -->
           <input type="hidden" name="token" value="">
 
           <div class="mb-3">
-            <label for="password" class="form-label">Email</label>
-            <input type="email" placeholder="Masukan alamat email" class="form-control" id="email" name="password"  required>
+            <label for="password" class="form-label">Password Baru</label>
+            <input type="password" class="form-control" id="password" name="password" required>
           </div>
-          <br>
-            <p id="message"></p>
-          <br>
-        
+
+          <div class="mb-3">
+            <label for="confirm_password" class="form-label">Konfirmasi Password</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+          </div>
+
           <button type="submit" class="btn gradient-gold w-100">Simpan Password</button>
         </form>
 
