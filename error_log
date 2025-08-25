@@ -934,3 +934,13 @@ Stack trace:
 #1 {main}
   thrown in C:\laragon\www\luminara\includes\resetPassword.php on line 44
 >>>>>>> b1066de0d79f36591f5b39e4f2dd35f1c5f0b85f
+[25-Aug-2025 01:57:13 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in D:\localweb\WEB_LOCAL\Luminara\public\pages\reset_password.php on line 5
+[25-Aug-2025 01:57:13 UTC] PHP Warning:  require(D:\localweb\WEB_LOCAL\Luminara\includes/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\localweb\WEB_LOCAL\Luminara\includes\config.php on line 2
+[25-Aug-2025 01:57:13 UTC] PHP Stack trace:
+[25-Aug-2025 01:57:13 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\index.php:0
+[25-Aug-2025 01:57:13 UTC] PHP   2. require() D:\localweb\WEB_LOCAL\Luminara\public\index.php:4
+[25-Aug-2025 01:57:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\localweb\WEB_LOCAL\Luminara\includes/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\localweb\WEB_LOCAL\Luminara\includes\config.php:2
+Stack trace:
+#0 D:\localweb\WEB_LOCAL\Luminara\public\index.php(4): require()
+#1 {main}
+  thrown in D:\localweb\WEB_LOCAL\Luminara\includes\config.php on line 2
