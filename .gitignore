@@ -1,2 +1,4 @@
 .env
+access.log
+error_log
 /vendor

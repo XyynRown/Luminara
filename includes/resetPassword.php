@@ -36,7 +36,7 @@ function resetPassword($base_url ,$conn, $mailconfig) {
         }
 
         $template = file_get_contents("../public/components/mailbox.php");
-        $link = "$base_url/resetPassword?token=$token"; // Link to reset password
+        $link = "$base_url/changePassword?token=$token"; // Link to reset password
 
         $subject = "Reset Password Anda";
         $body = str_replace(
