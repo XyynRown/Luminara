@@ -3,22 +3,21 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../vendor/autoload.php';
+function sendEmail($to, $subject, $body, $mailconfig){
 
-function sendEmail($to, $subject, $body){
     $mail = new PHPMailer(true);
     $mail->SMTPDebug = false;
 
     try{
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = $mailconfig['host'];
+        $mail->Port = $mailconfig['port'];
         $mail->SMTPAuth = true; 
-        $mail->Username = 'skyzzo2105@gmail.com';
-        $mail->Password = 'arkl yhzp zhag pker';;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Username = $mailconfig['username'];
+        $mail->Password = $mailconfig['password'];
+        $mail->SMTPSecure = $mailconfig['encryption']; 
 
-        $mail->setFrom('skyzzo2105@gmail.com', 'Luminara');
+        $mail->setFrom( $mailconfig['from'], $mailconfig['from_name']);
         $mail->addAddress($to);
         
         $mail->isHTML(true);

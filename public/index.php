@@ -15,12 +15,17 @@ if (str_starts_with($request, "api/")) {
         
         case "api/sendOTP":
             require __DIR__ . '/../includes/register.php';
-            sendOTP($conn);
+            sendOTP($conn, $mailconfig);
             break;
 
         case "api/verifyOTP":
             require __DIR__ . '/../includes/register.php';
             verifyOTP($conn);
+            break;
+
+        case "api/resetPassword":
+            require __DIR__ . '/../includes/resetPassword.php';
+            resetPassword($base_url,$conn, $mailconfig);
             break;
 
         case "api/auth":
@@ -52,6 +57,9 @@ switch ($request) {
         break;
     case 'verification':
         require __DIR__ . '/pages/email_verification.php';
+        break;
+    case 'resetPassword':
+        require __DIR__ . '/pages/reset_password.php';
         break;
     default:
         require __DIR__ . '/pages/not_found.php';

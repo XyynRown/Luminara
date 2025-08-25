@@ -34,9 +34,9 @@
           max-width: 500px;
         "
       >
-        <h2 style="margin: 0;">Verifikasi Email Anda</h2>
+        <h2 style="margin: 0;">{{TITLE}}</h2>
         <p style="margin: 10px 0;">
-          Gunakan kode berikut untuk menyelesaikan pendaftaran:
+          {{HEADER}}
         </p>
 
         <div
@@ -47,22 +47,26 @@
             margin: 20px 0;
           "
         >
-          {{OTP}}
+          {{CONTENTS}}
         </div>
 
         <p style="font-size: 12px; margin: 0;">
-          Kode berlaku {{EXPIRED}} menit. Jangan bagikan kode ini ke siapapun 💢
+          Jangan bagikan email ini kepada siapapun 💢
         </p>
       </div>
     </div>
 
     <!-- Footer -->
     <div style="background: linear-gradient(90deg, #f8c471, #e49920, #f8c471); padding:15px; text-align:center; font-size:12px; color:white;">
-      <p>Jika Anda tidak merasa mendaftar, abaikan email ini.</p>
-      <p>© 2025 Luminara. All rights reserved.</p>
+      <p>Jika Anda tidak merasa melakukan aktivitas ini, abaikan email ini.</p>
+      <p>&copy; <span id="year"></span> Luminara. All rights reserved.</p>
     </div>
 
     
   </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

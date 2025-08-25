@@ -1,11 +1,30 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
 
-$host = 'localhost';
-$port = '3306';
-$db = 'luminara';
-$username = 'root';
-$password = '';
+use Dotenv\Dotenv;
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
 
+//URL
+$base_url = $_ENV['APP_URL'];
+
+//database connection
+$host = $_ENV['DB_HOST'];
+$port = $_ENV['DB_PORT'];
+$db = $_ENV['DB_NAME'];
+$username = $_ENV['DB_USERNAME'];
+$password = $_ENV['DB_PASSWORD'];
+
+//mailer
+$mailconfig = [
+    'host' => $_ENV['MAIL_HOST'],
+    'port' => $_ENV['MAIL_PORT'],
+    'username' => $_ENV['MAIL_USERNAME'],
+    'password' => $_ENV['MAIL_PASSWORD'],
+    'encryption' => $_ENV['MAIL_ENCRYPTION'],
+    'from' => $_ENV['MAIL_FROM'],
+    'from_name' => $_ENV['MAIL_FROM_NAME']
+];
 
 try{
     $conn = new PDO("mysql:host=$host:$port; dbname=$db", $username, $password);
@@ -15,4 +34,4 @@ try{
     die('Connection failed: ' . $e->getMessage());
 }
 
-$jwt_token = 'gacor999';
+$jwt_token = $_ENV['JWT_SECRET'];

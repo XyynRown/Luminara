@@ -2,14 +2,20 @@
 
 $title = "Reset Password";
 $css = "reset_password"; 
+<<<<<<< HEAD
 $script = "reset_password";
 $checkAuth = false; 
+=======
+$script = "resetPassword";
+$checkAuth = false; // Tidak perlu autentikasi untuk halaman verifikasi
+>>>>>>> b1066de0d79f36591f5b39e4f2dd35f1c5f0b85f
 
 ?>
 <?php
 include_once __DIR__ . '/../components/header.php';
 ?>
 
+<<<<<<< HEAD
 <div class="container d-flex align-items-center justify-content-center vh-100" style="">
   <div class="col-md-5">
     <div class="card shadow-lg border-0 rounded-4">
@@ -53,3 +59,15 @@ include_once __DIR__ . '/../components/header.php';
 <?php
 include_once __DIR__ . '/../components/footer.php';
 ?>
+=======
+    <!-- Form to reset password -->
+    <h1>Reset Password</h1>
+    <form id="resetPasswordForm">
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Kirim Email</button>
+    </form>
+
+<?php
+include_once __DIR__ . '/../components/footer.php';
+?>
+>>>>>>> b1066de0d79f36591f5b39e4f2dd35f1c5f0b85f

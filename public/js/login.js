@@ -33,7 +33,11 @@ document
       if (data.success) {
         alert("Login berhasil!");
         window.location.href = "/";
+<<<<<<< HEAD
       } else {
+=======
+      } else {d
+>>>>>>> b1066de0d79f36591f5b39e4f2dd35f1c5f0b85f
         document.getElementById("warningText").textContent = data.message;
       }
     } catch (err) {
