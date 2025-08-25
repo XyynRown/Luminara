@@ -26,13 +26,13 @@ document
       const res = await fetch("/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
       const data = await res.json();
 
       if (data.success) {
         alert("Login berhasil!");
-        window.location.href = window.location.origin + "/";
+        window.location.href = "/";
       } else {
         document.getElementById("warningText").textContent = data.message;
       }

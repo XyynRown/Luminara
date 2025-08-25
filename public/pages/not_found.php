@@ -15,7 +15,7 @@ include_once __DIR__ . '/../components/header.php';
         <!-- <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid me-3" style="width: 150px; height: 150px;">
         <h1 class="display-1 fw-bold text-disable">404</h1> -->
         <h1 class="display-1 fw-bold text-disable">4</h1>
-        <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid me-3" style="width: 90px; height: 90px;">
+        <img id="randomImg" src="../assets/img/404/1.jpg" alt="Logo" class="img-fluid" style="width: 90px; height: 90px;">
         <h1 class="display-1 fw-bold text-disable">4</h1>
     </div>
 
