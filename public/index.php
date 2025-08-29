@@ -28,6 +28,11 @@ if (str_starts_with($request, "api/")) {
             resetPassword($base_url,$conn, $mailconfig);
             break;
 
+        case "api/verifyToken":
+            require __DIR__ . '/../includes/resetPassword.php';
+            checkTokenResetPassword($conn);
+            break;
+
         case "api/auth":
             require __DIR__ . '/../includes/checkAuth.php';
             break;
@@ -60,6 +65,9 @@ switch ($request) {
         break;
     case 'resetPassword':
         require __DIR__ . '/pages/reset_password.php';
+        break;
+    case 'changePassword':
+        require __DIR__ . '/pages/change_password.php';
         break;
     default:
         require __DIR__ . '/pages/not_found.php';
