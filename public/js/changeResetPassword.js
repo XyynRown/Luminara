@@ -1,11 +1,14 @@
-const params = new URLSearchParams(window.location.search);
-const token = params.get("token");
+const identifier = getQueryParam("identifier");
+const token = getQueryParam("token");
+
+console.log("Identifier:", identifier);
+console.log("Token:", token);
 
 //Check token
 document.addEventListener("DOMContentLoaded", async () => {
     if (!token) {
-        document.getElementById("message").textContent = "Token tidak valid.";
-        document.getElementById("changePasswordForm").style.display = "none";
+        document.getElementById("warningMessage").textContent = "Token tidak valid.";
+        showModal("warningModal");
         return;
     } else {
         try {
@@ -13,18 +16,18 @@ document.addEventListener("DOMContentLoaded", async () => {
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ token: token }),
+                body: JSON.stringify({ token: token, identifier: identifier }),
             }
             );
             const result = await res.json();
             if (!result.valid) {
-                document.getElementById("message").textContent = "Token tidak valid atau sudah kedaluwarsa.";
-                document.getElementById("changePasswordForm").style.display = "none";
+                document.getElementById("warningMessage").textContent = result.message;
+                showModal("warningModal");
             }
         } catch (error) {
             console.error("Error:", error);
-            document.getElementById("message").textContent = "Terjadi kesalahan saat memverifikasi token.";
-            document.getElementById("changePasswordForm").style.display = "none";
+            document.getElementById("warningMessage").textContent = "Terjadi kesalahan saat memverifikasi token.";
+            showModal("warningModal");
         }
     }
 });
@@ -45,7 +48,7 @@ document.getElementById("changePasswordForm").addEventListener("submit", async (
         const res = await fetch("/api/changePassword", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ token: token, newPassword: newPassword }),
+            body: JSON.stringify({ token: token, identifier: identifier,newPassword: newPassword, confirmPassword: confirmPassword }),
         });
         const result = await res.json();
 

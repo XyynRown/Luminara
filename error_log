@@ -1098,7 +1098,14 @@ Stack trace:
 [25-Aug-2025 04:41:53 UTC] PHP Stack trace:
 [25-Aug-2025 04:41:53 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\index.php:0
 [25-Aug-2025 04:41:53 UTC] PHP   2. trim($string = NULL, $characters = '/') D:\localweb\WEB_LOCAL\Luminara\public\index.php:2
+<<<<<<< HEAD
 [30-Aug-2025 03:30:23 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "falase" in D:\localweb\WEB_LOCAL\Luminara\public\pages\loadingScreen.php:6
 Stack trace:
 #0 {main}
   thrown in D:\localweb\WEB_LOCAL\Luminara\public\pages\loadingScreen.php on line 6
+=======
+[30-Aug-2025 04:23:26 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 82
+[30-Aug-2025 04:23:26 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 86
+[30-Aug-2025 04:23:31 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 82
+[30-Aug-2025 04:23:31 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 86
+>>>>>>> 7ec1e012c091612df198de8dec3633d6c3db92c5
