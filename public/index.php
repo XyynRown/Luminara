@@ -33,6 +33,11 @@ if (str_starts_with($request, "api/")) {
             checkTokenResetPassword($conn);
             break;
 
+        case "api/changePassword":
+            require __DIR__ . '/../includes/resetPassword.php';
+            changePassword($conn);
+            break;
+
         case "api/auth":
             require __DIR__ . '/../includes/checkAuth.php';
             break;

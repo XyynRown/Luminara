@@ -6,6 +6,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
 
+  <script src="../js/utils.js"></script>
+
   <script type="<?= $type ?? null ?>" src="../js/<?= $script ?? "login"; ?>.js"></script>
   <?php if (!empty($checkAuth) && $checkAuth === true): ?>
     <script src="/../js/auth.js"></script>

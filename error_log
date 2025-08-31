@@ -1098,3 +1098,7 @@ Stack trace:
 [25-Aug-2025 04:41:53 UTC] PHP Stack trace:
 [25-Aug-2025 04:41:53 UTC] PHP   1. {main}() D:\localweb\WEB_LOCAL\Luminara\public\index.php:0
 [25-Aug-2025 04:41:53 UTC] PHP   2. trim($string = NULL, $characters = '/') D:\localweb\WEB_LOCAL\Luminara\public\index.php:2
+[30-Aug-2025 04:23:26 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 82
+[30-Aug-2025 04:23:26 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 86
+[30-Aug-2025 04:23:31 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 82
+[30-Aug-2025 04:23:31 UTC] PHP Warning:  Trying to access array offset on false in C:\laragon\www\luminara\includes\resetPassword.php on line 86

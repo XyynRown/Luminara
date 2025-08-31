@@ -35,7 +35,7 @@ function sendOTP($conn, $mailconfig) {
         exit;
     } else {
         $otp = rand(100000, 999999);
-        $otpExpired = date("Y-m-d H:i:s", time() + (5 * 60)); // 5 menit
+        $otpExpired = time() + (5 * 60); // 5 menit
 
         $template = file_get_contents("../public/components/mailbox.php");
         $subject = "Kode OTP Anda";
@@ -51,11 +51,11 @@ function sendOTP($conn, $mailconfig) {
         $existing = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if($existing) {
-            $stmt = $conn->prepare("UPDATE pending_users SET otp_code = ?, otp_expired_at = ? WHERE email = ?");
-            $stmt->execute([$otp, $otpExpired, $email]);
+            $stmt = $conn->prepare("UPDATE pending_users SET otp_code = ?, otp_expired_at = ?, created_at = ? WHERE email = ?");
+            $stmt->execute([$otp, $otpExpired, time(), $email]);
         } else {
-            $stmt = $conn->prepare("INSERT INTO pending_users (email, otp_code, otp_expired_at) VALUES (?, ?, ?)");
-            $stmt->execute([$email, $otp, $otpExpired]);
+            $stmt = $conn->prepare("INSERT INTO pending_users (email, otp_code, otp_expired_at, created_at) VALUES (?, ?, ?, ?)");
+            $stmt->execute([$email, $otp, $otpExpired, time()]);
         }
 
         $send = sendEmail($email, $subject, $body, $mailconfig);
@@ -75,11 +75,11 @@ function verifyOTP($conn) {
     $password = $data['password'] ?? null;
     $otp = $data['otp'] ?? null;
 
-    $stmt = $conn->prepare("SELECT * FROM pending_users WHERE email = ? AND otp_code = ?");
-    $stmt->execute([$email, $otp]);
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    $stmt = $conn->prepare("SELECT * FROM pending_users WHERE email = ? AND otp_code = ? AND otp_expired_at > ?");
+    $stmt->execute([$email, $otp, time()]);
+    $existingUser = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if($user && time() < strtotime($user['otp_expired_at'])) {
+    if($existingUser) {
         // OTP valid, buat user baru
         $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
         $stmt->execute([$username, $email, password_hash($password, PASSWORD_DEFAULT)]);
