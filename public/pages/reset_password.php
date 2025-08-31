@@ -10,7 +10,7 @@ $checkAuth = false;
 include_once __DIR__ . '/../components/header.php';
 ?>
 
-<div class="container d-flex align-items-center justify-content-center vh-100" style="">
+<div class="container d-flex align-items-center justify-content-center vh-100">
   <div class="col-md-5">
     <div class="card shadow-lg border-0 rounded-4">
       <div class="card-body p-4">
@@ -43,10 +43,17 @@ include_once __DIR__ . '/../components/header.php';
 <div>
     <!-- <img src="../assets/img/rst_pass.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute bottom-0 end-0" style="width: 300px; opacity: 0.1;"> -->
     <!-- <img src="../assets/img/rst_pass.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-0 start-0" style="width: 300px; opacity: 0.1;"> -->
+<<<<<<< HEAD
     <img src="../assets/img/reset_password/rst_pass.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img2 d-none d-lg-block" style="">
     <img src="../assets/img/reset_password/rst_pass2.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img1 d-none d-lg-block" style="">
     <img src="../assets/img/reset_password/rst_pass.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img4 d-lg-none" style="">
     <img src="../assets/img/reset_password/rst_pass2.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img5 d-lg-none " style="">
+=======
+    <img src="../assets/img/reset_password/rst_pass.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img2 d-none d-lg-block">
+    <img src="../assets/img/reset_password/rst_pass2" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img1 d-none d-lg-block">
+    <img src="../assets/img/reset_password/rst_pass.jpg" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img4 d-lg-none">
+    <img src="../assets/img/reset_password/rst_pass2" alt="Reset Password Illustration" class="img-fluid position-absolute top-50 start-50 translate-middle img5 d-lg-none ">
+>>>>>>> 126133275b4e17b44b7c40b349cb2b77156dcd54
 </div>
 
 <?php

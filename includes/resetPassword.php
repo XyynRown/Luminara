@@ -36,7 +36,7 @@ function resetPassword($base_url ,$conn, $mailconfig) {
         }
 
         $template = file_get_contents("../public/components/mailbox.php");
-        $link = "$base_url/resetPassword?token=$token"; // Link to reset password
+        $link = "$base_url/changePassword?token=$token"; // Link to reset password
 
         $subject = "Reset Password Anda";
         $body = str_replace(
@@ -52,4 +52,38 @@ function resetPassword($base_url ,$conn, $mailconfig) {
             echo json_encode(["success" => false, "message" => "Gagal mengirim email: $send"]);
         }
     }
+}
+
+function checkTokenResetPassword($conn) {
+    $token = json_decode(file_get_contents("php://input"), true)['token'] ?? null;
+
+    $stmt = $conn->prepare("SELECT id FROM password_resets WHERE token = ? AND expired_at > NOW()");
+    $stmt->execute([$token]);
+    $resetRequest = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($resetRequest) {
+        echo json_encode(["valid" => true, "message" => "Token valid"]);
+    } else {
+        echo json_encode(["valid" => false, "message" => "Token tidak valid atau sudah kedaluwarsa"]);
+    }
+}
+
+function changePassword($conn) {
+    $data = json_decode(file_get_contents("php://input"), true);
+
+    $stmt = $conn->prepare("SELECT id, user_id FROM password_resets WHERE token = ?");
+    $stmt->execute([$data['token']]);
+    $resetRequest = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    $hashedPassword = password_hash($data['newPassword'], PASSWORD_DEFAULT);
+
+    // Update the user's password
+    $stmt = $conn->prepare("UPDATE users SET password = ? WHERE id = ?");
+    $stmt->execute([$hashedPassword, $resetRequest['user_id']]);
+
+    // Delete the used reset token
+    $stmt = $conn->prepare("DELETE FROM password_resets WHERE id = ?");
+    $stmt->execute([$resetRequest['id']]);
+
+    echo json_encode(["success" => true, "message" => "Password berhasil diubah"]);
 }
