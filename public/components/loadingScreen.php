@@ -11,7 +11,7 @@
         }
 
         .spinner-border {
-            border: 0.5em solid rgba(0, 0, 0, 0.1);
+            /* border: 0.5em solid rgba(0, 0, 0, 0.1); */
             /* border-top: 0.5em solid #3498db; */
             border-radius: 50%;
             width: 3rem;
@@ -54,13 +54,16 @@
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="text-center">
             <div class="spinner-border text-primary" role="status" style="width: 5rem; height: 5rem;">
-                <img src="../assets/img/404/2.jpg" alt="Loading..." style="width: 10rem; height: 10rem; margin-top: -150px; margin-right: 0px; position:absolute;   rotate: -180deg;">
                 <img src="../assets/img/404/1.jpg" alt="Loading..." style="width: 10rem; height: 10rem; margin-top: 50px; margin-right: 0px; position: absolute;">
+            </div>
+            <div class="spinner-border text-primary" role="status" style="width: 5rem; height: 5rem;">
+                <img src="../assets/img/404/2.jpg" alt="Loading..." style="width: 10rem; height: 10rem; margin-top: -150px; margin-right: 0px; position:absolute;   rotate: -180deg;">
             </div>
         </div>
     </div>
 </body>
 <script>
+                // <img src="../assets/img/404/2.jpg" alt="Loading..." style="width: 10rem; height: 10rem; margin-top: -150px; margin-right: 0px; position:absolute;   rotate: -180deg;">
 
 </script>
 </html>

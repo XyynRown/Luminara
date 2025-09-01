@@ -76,7 +76,7 @@ include_once __DIR__ . '/../components/header.php';
            <div class="d-grid gap-2 mb-3 d-flex justify-content-center">
               <button type="button" 
                       class="btn gradient-gold w-100" 
-                      onclick="window.location.href='/'">
+                      onclick="showModal('loginModal');">
                 <strong>
                   Demo
                 </strong>
@@ -98,6 +98,28 @@ include_once __DIR__ . '/../components/header.php';
               <a style="color:#f8c471;" href="resetPassword">Iya,hehe</a>
             </p>
           </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img class="bottom-0 end-0" src="../assets/img/modal/modal_img.png" alt="Loading..." style="width: 12.8rem; height: 12.8rem; position: absolute; z-index: 0; opacity: 0.5;">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login Berhasil</h1>
+      </div>
+      <div class="modal-body">
+        <p id="warningMessage"></p>
+        Anda akan diarahkan ke halaman utama.
+      </div>
+      <div class="modal-footer">
+        <button onclick="window.location.href='/'" type="button" class="btn btn-login" style="z-index: 1;">
+          <strong>
+            Oke
+          </strong>
+        </button>
       </div>
     </div>
   </div>
